@@ -13,7 +13,7 @@ Edmonds-Karp algorithm
 2. In particular the Edmonds-Karp algorithm uses breadth first search to compute the augmenting path.
 3. Hence if there are multiple augmenting paths the path with smallest length is selected.
 4. This way of choosing the augmenting path effectively leads to the computation of the shortest path in O(V\*E\*E) time.
-<br> 
+ 
 The pseudocode is given below
 n = Number of Nodes
 CapacityMatrix[n][n] = CapacityMatrix[i][j] denotes the maximum units of flow that can be sent from node i to node j.
