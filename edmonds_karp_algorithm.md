@@ -42,7 +42,7 @@ EdmondKarp( n, SourceNode, DestinationNode, AdjacencyMatrix, CapacityMatrix)
         //Remove the entries already stored in the AugmentingPath  
     return MaxFlow
 ```
-####Explanation:
+#### Explanation
 1. We begin by initializing the Maxflow and ResidualMatrix variables.
 2. At each iteration we will be using the minflow and AugmentingPath variables so these are also initialized
 3. At each iteration we are calling the bfs() function. We pass AdjacencyMatrix, SourceNode, TargetNode, ResidualMatrix as parameters. In addition to this minflow
