@@ -8,6 +8,7 @@ Edmonds-Karp algorithm
 ### Definition
 #### norep
 <br>
+
 1. Edmonds-Karp algorithm is one of the ways of implementing the Ford-Fulkerson Algorithm.
 2. In particular the Edmonds-Karp algorithm uses breadth first search to compute the augmenting path.
 3. Hence if there are multiple augmenting paths the path with smallest length is selected.
@@ -43,7 +44,7 @@ EdmondKarp( n, SourceNode, DestinationNode, AdjacencyMatrix, CapacityMatrix)
         //Remove the entries already stored in the AugmentingPath  
     return MaxFlow
 ```
-#### Explanation
+#### Code-Explanation
 1. We begin by initializing the Maxflow and ResidualMatrix variables.
 2. At each iteration we will be using the minflow and AugmentingPath variables so these are also initialized
 3. At each iteration we are calling the bfs() function. We pass AdjacencyMatrix, SourceNode, TargetNode, ResidualMatrix as parameters. In addition to this minflow
