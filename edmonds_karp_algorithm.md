@@ -12,7 +12,7 @@ Edmonds-Karp algorithm
 1. Edmonds-Karp algorithm is one of the ways of implementing the Ford-Fulkerson Algorithm.
 2. In particular the Edmonds-Karp algorithm uses breadth first search to compute the augmenting path.
 3. Hence if there are multiple augmenting paths the path with smallest length is selected.
-4. This way of choosing the augmenting path effectively leads to the computation of the shortest path in O(V*E*E) time.
+4. This way of choosing the augmenting path effectively leads to the computation of the shortest path in O(V\*E\*E) time.
 
  
 ```
