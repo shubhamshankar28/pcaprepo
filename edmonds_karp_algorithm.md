@@ -6,7 +6,6 @@ Edmonds-Karp algorithm
 <br>
 
 ### Definition
-#### norep
 <br>
 
 1. Edmonds-Karp algorithm is one of the ways of implementing the Ford-Fulkerson Algorithm.
