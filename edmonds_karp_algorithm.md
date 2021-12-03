@@ -21,7 +21,8 @@ AdjacencyMatrix[n][n] = AdjacencyMatrix[i][j] denotes whether there exists an ed
 SourceNode = This is the SourceNode.
 DestinationNode = This is the DestinationNode.
 Note here it is assumed that all parameters are passed by reference so the changes that we make in the EdmondKarp function will
-be reflected in the calling function.  
+be reflected in the calling function.     
+```
 EdmondKarp( n, SourceNode, DestinationNode, AdjacencyMatrix, CapacityMatrix)
     MaxFlow = 0
     ResidualMatrix[n][n] = CapacityMatrix[n][n]
@@ -40,7 +41,7 @@ EdmondKarp( n, SourceNode, DestinationNode, AdjacencyMatrix, CapacityMatrix)
         minflow = 0
         //Remove the entries already stored in the AugmentingPath  
     return MaxFlow
-
+```
 ####Explanation:
 1. We begin by initializing the Maxflow and ResidualMatrix variables.
 2. At each iteration we will be using the minflow and AugmentingPath variables so these are also initialized
