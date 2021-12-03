@@ -6,7 +6,7 @@ Edmonds-Karp algorithm
 <br>
 
 ### Definition
-
+#### norep
 <br>
 1. Edmonds-Karp algorithm is one of the ways of implementing the Ford-Fulkerson Algorithm\.
 2. In particular the Edmonds-Karp algorithm uses breadth first search to compute the augmenting path.
