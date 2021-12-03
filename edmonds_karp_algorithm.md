@@ -14,13 +14,13 @@ Edmonds-Karp algorithm
 3. Hence if there are multiple augmenting paths the path with smallest length is selected.
 4. This way of choosing the augmenting path effectively leads to the computation of the shortest path in O(V\*E\*E) time.
  
-The pseudocode is given below
-n = Number of Nodes
-CapacityMatrix[n][n] = CapacityMatrix[i][j] denotes the maximum units of flow that can be sent from node i to node j.
-AdjacencyMatrix[n][n] = AdjacencyMatrix[i][j] denotes whether there exists an edge be node i and node j. A value of 1 indicates
+The pseudocode is given below<br>
+- n = Number of Nodes
+- CapacityMatrix[n][n] = CapacityMatrix[i][j] denotes the maximum units of flow that can be sent from node i to node j.
+- AdjacencyMatrix[n][n] = AdjacencyMatrix[i][j] denotes whether there exists an edge be node i and node j. A value of 1 indicates
                         the presence of an edge where as 0 means there is no edge.
-SourceNode = This is the SourceNode.
-DestinationNode = This is the DestinationNode.
+- SourceNode = This is the SourceNode.
+- DestinationNode = This is the DestinationNode.
 Note here it is assumed that all parameters are passed by reference so the changes that we make in the EdmondKarp function will
 be reflected in the calling function.    
  
