@@ -8,20 +8,13 @@ Edmonds-Karp algorithm
 ### Definition
 #### norep
 <br>
-1. Edmonds-Karp algorithm is one of the ways of implementing the Ford-Fulkerson Algorithm\.
+
+1. Edmonds-Karp algorithm is one of the ways of implementing the Ford-Fulkerson Algorithm.
 2. In particular the Edmonds-Karp algorithm uses breadth first search to compute the augmenting path.
 3. Hence if there are multiple augmenting paths the path with smallest length is selected.
 4. This way of choosing the augmenting path effectively leads to the computation of the shortest path in O(V*E*E) time.
 
-The pseudocode is given below
-n = Number of Nodes
-CapacityMatrix[n][n] = CapacityMatrix[i][j] denotes the maximum units of flow that can be sent from node i to node j.
-AdjacencyMatrix[n][n] = AdjacencyMatrix[i][j] denotes whether there exists an edge be node i and node j. A value of 1 indicates
-                        the presence of an edge where as 0 means there is no edge.
-SourceNode = This is the SourceNode.
-DestinationNode = This is the DestinationNode.
-Note here it is assumed that all parameters are passed by reference so the changes that we make in the EdmondKarp function will
-be reflected in the calling function.     
+ 
 ```
 EdmondKarp( n, SourceNode, DestinationNode, AdjacencyMatrix, CapacityMatrix)
     MaxFlow = 0
